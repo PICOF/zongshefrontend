@@ -1,0 +1,98 @@
+body{
+    background-color: rgba(237, 239, 247, 1);
+}
+div.modelhead{
+    font-family: 思源黑体;
+    font-weight: 800;
+    font-size: larger;
+}
+div.contentA{
+    float: left;
+    margin-top: 3%;
+    margin-left: 10%;
+    height: 700px;
+    width: 52%;
+}
+div.contentB{
+    float: right;
+    margin-top: 3%;
+    margin-right: 4%;
+    height: 700px;
+    width: 28%;
+}
+div.popu{
+    height: 17%;
+    margin-bottom: 2%;
+}
+div.popu .figure{
+    position: relative;
+    bottom: 5px;
+    background-color: white;
+    border-radius: 26px;
+    height: 70%;
+    padding-left: 2%;
+}
+div.popu .figure li{
+    list-style: none;
+    float: left;
+    width: 22%;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+div.popu .figure li .info{
+    background-color: rgb(86, 182, 77);
+    height: 50px;
+}
+div.bed{
+    height: 48%;
+    margin-bottom: 2%;
+}
+div.bed div{
+    padding-top: 20px;
+}
+div.bed .figure{
+    background-color: white;
+    border-radius: 26px;
+    height: 78%;
+    margin-top: 10px;
+}
+div.arrange{
+    height: 30%;
+}
+div.task{
+    margin-top: 20px;
+    float: left;
+    width: 44%;
+    height: 90%;
+}
+div.task .figure{
+    background-color: white;
+    border-radius: 26px;
+    height: 84%;
+    margin-top: 10px;
+}
+div.oper{
+    margin-top: 20px;
+    float: right;
+    width: 44%;
+    height: 90%;
+}
+div.oper .figure{
+    background-color: white;
+    border-radius: 26px;
+    height: 84%;
+    margin-top: 10px;
+}
+div.msg{
+    height: 68%;
+}
+div.msg .figure{
+    background-color: white;
+    border-radius: 26px;
+    height: 92%;
+    margin-top: 10px;
+}
+div.day{
+    margin-top: 50px;
+    width: 44%;
+}
