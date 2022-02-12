@@ -6,9 +6,6 @@
           title: {},
           color:['rgba(0, 58, 140, 1)','rgba(9, 109, 217, 1)','rgba(64, 169, 255, 1)','rgba(145, 196, 237, 1)'],
           tooltip: {},
-          legend: {
-            data: ['销量']
-          },
           series: [
               {
                   type: 'pie',

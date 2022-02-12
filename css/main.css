@@ -80,6 +80,11 @@ div.popu .figure li{
     width: 22%;
     margin-top: 2%;
     margin-right: 3%;
+    transition: all 0.3s ease;
+}
+div.popu .figure li:hover{
+    transform: scale(1.08,1.08);
+    font-size: x-large;
 }
 div.popu .figure li .info{
     height: 50px;
@@ -139,16 +144,12 @@ div.popu .figure .des .num{
 }
 div.bed{
     height: 48%;
-    margin-bottom: 2%;
-}
-div.bed div{
-    position: relative;
-    padding-top: 20px;
+    margin-top: 4%;
 }
 div.bed .modelhead span{
     display: inline-block;
     position: absolute;
-    top: 40px;
+    top: -34px;
     width: 180px;
     height: 180px;
     margin-left: 160px;
@@ -157,17 +158,63 @@ div.bed .modelhead span{
     zoom: 25%;
 }
 div.bed .figure{
+    position: relative;
+    top: 10px;
     background-color: white;
     border-radius: 26px;
     height: 78%;
     margin-top: 10px;
+    padding-top: 20px;
     transition: all 0.3s ease;
 }
 .bed .posi{
+    position: relative;
+    top: -10px;
     float: left;
 }
+.posi .group span{
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 550px;
+    display: inline-block;
+    width: 140px;
+    height: 220px;
+    margin-left: 110px;
+    zoom: 18%;
+    background: -1300px 0px;
+    background-image: url(../img/icons.png);
+    transition: all 0.3s ease;
+}
+.posi .group span:nth-child(3n+3){
+    margin-right: 180px;
+}
+.posi .group span.red{
+    background: -1004px 0px;
+    background-image: url(../img/icons.png);
+}
+.posi .group span.blue{
+    background: -1154px 0px;
+    background-image: url(../img/icons.png);
+}
+.posi .group span.yellow{
+    background: -1442px 0px;
+    background-image: url(../img/icons.png);
+}
+.posi .group span:hover{
+    transform: scale(1.1,1.1);
+    font-size: 80px;
+}
+.bed .group ul{
+    list-style: none;
+
+}
+.bed .group li{
+    margin-bottom: 23px;
+}
 .bed .eg ul{
-    top: -30px;
+    top: -10px;
     margin-right: 80px;
 }
 .bed .figure .eg .color{
