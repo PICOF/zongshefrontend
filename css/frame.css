@@ -4,7 +4,7 @@ body{
 }
 .sidebar{
     position: fixed;
-    /* left: -40px; */
+    left: -40px;
     width: 70px;
     height: 100%;
     background-color: white;
