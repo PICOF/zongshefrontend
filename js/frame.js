@@ -12,7 +12,6 @@ function changeV(){
     sele.style.top='191px';
     home.style.backgroundPosition='-282px -136px';
     view.style.backgroundPosition='-145px 0';
-    console.log(home.style.innerHeight);
 }
 function changeW(){
     show.style.height = window.innerHeight + 'px';
