@@ -5,21 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            background-color: rgba(237, 239, 247, 1);
-            user-select: none;
-        }
-        div{
-            text-align: center;
-            font-size: 60px;
-            font-weight: 800;
-            font-family: 幼圆;
-            line-height: 600px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/personal.css">
 </head>
 <body>
-    <div>咕咕咕~</div>
+    <div class="search mpart">
+        <div name="" id="sel" class="flo" onclick="chooseP()"><span class="arrow"></span><span class="text">Select</span></div>
+        <div class="list flo">
+            <ul>
+                <li>张三</li>
+                <li>李四</li>
+                <li>王二麻子</li>
+            </ul>
+        </div>
+    </div>
+    <div class="contentA mpart">
+        <div class="body flo">
+            <span class="tag">器官监测&nbsp;</span>
+            <div class="inner">
+                <div class="figure"></div>
+                <div class="ins">
+                    <div class="tem"></div>
+                    <div class="oxy"></div>
+                </div>
+                <div class="table">
+                    <div class="tem"></div>
+                    <div class="oxy"></div>
+                </div>
+            </div>
+        </div>
+        <div class="arr flo">
+            <span class="tag">日程安排&nbsp;</span>
+        </div>
+    </div>
+    <div class="contentB mpart">
+        <div class="pre flo">
+            <span class="tag">血压监测&nbsp;</span>
+        </div>
+        <div class="acthb">
+            <div class="act flo">
+                <span class="tag">活动监测&nbsp;</span>
+            </div>
+            <div class="hb flo">
+                <span class="hbtag">心率监测</span>
+                <span class="hbfigure"></span>
+                <div class="data">
+                    <div>
+                        <span class="num">102</span><span class="bpm">bpm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var person=document.querySelectorAll('div.list li');
+        var selectf=document.querySelector('#sel span.text');
+        var plist=document.querySelector('div.list');
+        var arrow=document.querySelector('#sel span');
+        function chooseP(){
+            plist.style.maxHeight='300px';
+            arrow.style.transform='rotate(180deg)';
+        }
+        plist.onmouseleave=function(){
+            this.style.maxHeight='0';
+            arrow.style.transform='rotate(0)';
+        }
+        for(var i=0;i<person.length;i++){
+            person[i].onclick=function(){
+                selectf.innerHTML=this.innerHTML;
+                plist.style.maxHeight='0';
+                arrow.style.transform='rotate(0)';
+            }
+        }
+    </script>
 </body>
 </html>
