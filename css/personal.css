@@ -12,11 +12,6 @@ div.search{
 }
 #sel{
     padding: 0;
-    appearance:none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    border: none;
-    outline: none;
     height: 100%;
     width: 38%;
     color: rgba(166, 166, 166, 1);
@@ -131,6 +126,65 @@ div.pre{
     display: inline-block;
     width: 38%;
     height: 100%;
+}
+div.pre div.graph{
+    position: absolute;
+    top: 26px;
+    left: 4%;
+    width: 92%;
+    height: 100%;
+}
+div.choose{
+    position: relative;
+    float: right;
+    z-index: 1000;
+    padding: 0;
+    margin-top: 14px;
+    margin-right: 14%;
+    height: fit-content;
+    max-height: 34px;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: rgba(237, 239, 247, 1);
+    color: rgba(166, 166, 166, 0.603);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 34px;
+    text-indent: 14%;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+div.choose .text{
+    margin-right: 56px;
+}
+div.choose span.arrow{
+    position: absolute;
+    top: 58px;
+    right: 26px;
+    width: 90px;
+    height: 40px;
+    background-image: url(../img/personalicons.png);
+    background-position: 670px -40px;
+    zoom: 24%;
+    transform: rotate(0);
+    transition: transform 0.3s ease;
+}
+div.choose ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-indent: 0;
+}
+div.choose li{
+    font-size: small;
+    font-weight: 100;
+    color: rgba(139, 139, 139, 0.925);
+    transition: all 0.3s ease;
+}
+div.choose li:hover{
+    background-color: rgba(194, 194, 194, 0.3);
 }
 div.acthb{
     display: inline-block;

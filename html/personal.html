@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/personal.css">
+    <script src="../js/echarts.js"></script>
 </head>
 <body>
     <div class="search mpart">
@@ -21,6 +22,13 @@
     <div class="contentA mpart">
         <div class="body flo">
             <span class="tag">器官监测&nbsp;</span>
+            <div class="choose" name="" onclick="chooseD1()">
+                <span class="text">Today</span><span class="arrow"></span>
+                <ul class="list">
+                    <li>Today</li>
+                    <li>Yesterday</li>
+                </ul>
+            </div>
             <div class="inner">
                 <div class="figure"></div>
                 <div class="ins">
@@ -40,6 +48,14 @@
     <div class="contentB mpart">
         <div class="pre flo">
             <span class="tag">血压监测&nbsp;</span>
+            <div class="choose" name="" onclick="chooseD2()">
+                <span class="text">Today</span><span class="arrow"></span>
+                <ul class="list">
+                    <li>Today</li>
+                    <li>Yesterday</li>
+                </ul>
+            </div>
+            <div class="graph"></div>
         </div>
         <div class="acthb">
             <div class="act flo">
@@ -76,6 +92,41 @@
                 arrow.style.transform='rotate(0)';
             }
         }
+        var dbox=document.querySelector('div.body .choose');
+        var dlist=document.querySelectorAll('div.body .choose li');
+        var nd=document.querySelector('div.body .choose span.text');
+        var darrow=document.querySelector('div.body .choose span.arrow');
+        function chooseD1(){
+            dbox.style.maxHeight='300px';
+            darrow.style.transform='rotate(180deg)';
+        }
+        dbox.onmouseleave=function(){
+            this.style.maxHeight='34px';
+            darrow.style.transform='rotate(0)';
+        }
+        for(var i=0;i<dlist.length;i++){
+            dlist[i].onclick=function(){
+                nd.innerHTML=this.innerHTML;
+            }
+        }
+        var dbox2=document.querySelector('div.pre .choose');
+        var dlist2=document.querySelectorAll('div.pre .choose li');
+        var nd2=document.querySelector('div.pre .choose span.text');
+        var darrow2=document.querySelector('div.pre .choose span.arrow');
+        function chooseD2(){
+            dbox2.style.maxHeight='300px';
+            darrow2.style.transform='rotate(180deg)';
+        }
+        dbox2.onmouseleave=function(){
+            this.style.maxHeight='34px';
+            darrow2.style.transform='rotate(0)';
+        }
+        for(var i=0;i<dlist2.length;i++){
+            dlist2[i].onclick=function(){
+                nd2.innerHTML=this.innerHTML;
+            }
+        }
     </script>
+    <script src="../js/pgraphs.js"></script>
 </body>
 </html>
