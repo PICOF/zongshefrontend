@@ -22,10 +22,8 @@ var option = {
           alignWithLabel: true,
           show: false
         },
-        axisLine:{
-            lineStyle:{
-                width: '0'
-            }
+        axisLine: {
+          show: false,
         },
         data: [
           '1:00',
@@ -113,6 +111,3 @@ var option = {
     ]
   };
 pregraph.setOption(option);
-window.onresize = function () {
-    pregraph.resize();
-};
